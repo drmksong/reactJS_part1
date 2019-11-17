@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "env"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "transform-runtime",
+    [
+      "transform-react-jsx",
+      {
+        "pragma": "React.createElement"
+      }
+    ]
+  ],
+  "parserOpts": {
+    "plugins": [
+      "dynamicImport"
+    ]
+  }
+}
